@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "content": {
-      "type": "blocks",
-      "required": true
-    },
     "image": {
       "type": "media",
       "multiple": true,
@@ -39,6 +35,10 @@
     },
     "secondaryKeywords": {
       "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
