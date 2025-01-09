@@ -30,15 +30,19 @@
       "repeatable": true,
       "component": "shared.seo"
     },
-    "primaryKeywords": {
-      "type": "string"
-    },
-    "secondaryKeywords": {
+    "keywords": {
       "type": "string"
     },
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "sources": {
+      "type": "text"
     }
   }
 }

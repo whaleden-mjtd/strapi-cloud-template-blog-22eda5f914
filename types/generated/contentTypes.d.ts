@@ -416,16 +416,17 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     image: Schema.Attribute.Media<'images' | 'files', true> &
       Schema.Attribute.Required;
+    keywords: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::article.article'
     > &
       Schema.Attribute.Private;
-    primaryKeywords: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    secondaryKeywords: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'shared.seo', true>;
+    sources: Schema.Attribute.Text;
+    summary: Schema.Attribute.Text & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
