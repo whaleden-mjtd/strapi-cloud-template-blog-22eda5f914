@@ -30,9 +30,6 @@
       "repeatable": true,
       "component": "shared.seo"
     },
-    "keywords": {
-      "type": "string"
-    },
     "content": {
       "type": "richtext",
       "required": true
@@ -41,8 +38,10 @@
       "type": "text",
       "required": true
     },
-    "sources": {
-      "type": "text"
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
     }
   }
 }
