@@ -42,6 +42,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category"
+    },
+    "uuid": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
