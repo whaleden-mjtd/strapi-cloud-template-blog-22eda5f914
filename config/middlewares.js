@@ -7,7 +7,7 @@ module.exports = [
     config: {
       enabled: true,
       headers: '*',
-      origin: ['https://www.whaleden.com']
+      origin: ['https://www.whaleden.com', 'https://whaleden.com', 'https://dev.whaleden.com', 'https://staging.whaleden.com']
     }
   },
   'strapi::poweredBy',
